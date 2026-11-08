@@ -1,0 +1,24 @@
+
+a = int(input("Primer número: "))
+b = int(input("Segundo número: "))
+c = int(input("Tercer número: "))
+
+if a > b:
+    a, b = b, a
+
+if b > c:
+    b, c = c, b
+
+if a > b:
+    a, b = b, a
+
+print(a, b, c)
+
+
+| Caso | Entrada | Esperado | Tu algoritmo | Modelo A | Modelo B |
+|---|---|---|---|---|---|
+| Desordenados | 7, 2, 5 | 2, 5, 7 | 2, 5, 7  | 2, 5, 7  | 2, 5, 7  |
+| Desordenados | 9, 5, 1 | 1, 5, 9 | 1, 5, 9  | 1, 5, 9  | 1, 5, 9  |
+| Repetidos    | 5, 1, 5 | 1, 5, 5 | 1, 5, 5  | 1, 5, 5  | 1, 5, 5  |
+| Negativos    | -3, 5, -1 | -3, -1, 5 | -3, -1, 5  | -3, -1, 5  | -3, -1, 5  |
+| Todos iguales | 4, 4, 4 | 4, 4, 4 | 4, 4, 4  | 4, 4, 4  | 4, 4, 4  |
